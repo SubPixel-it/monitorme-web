@@ -7,8 +7,15 @@ a:hover {
 }
 
 header,
-section[list] {
+section[list],
+label[type="toggle"],
+input:checked+label[type="toggle"]::after,
+div:not([divider])>aside {
     background-color: #fff;
+}
+
+input:checked+label[type="toggle"] {
+    border-color: rgb(72, 187, 129);
 }
 
 header,
@@ -16,11 +23,19 @@ footer,
 header,
 div[divider],
 section[list],
-section[list]>ul>li {
+section[list]>ul>li,
+aside[groups]>ul>li,
+input,
+select,
+label[type="toggle"],
+div:not([divider])>aside,
+section[borderless] {
     border-color: #e8e8e8;
 }
 
-body {
+body,
+section[list]>ul>li>section,
+aside[groups]>ul>li>section {
     background-color: #eeeeeed6;
 }
 
@@ -28,23 +43,43 @@ section[list]>ul>li>span {
     color: rgb(119, 119, 119);
 }
 
-span[status] {
+span[status],
+input[type="submit"],
+button {
     color: #ffffff;
 }
 
-span[status="-1"] {
+section[list]>ul>li>section[fill] {
+    background-color: rgba(255, 79, 79, 0.4);
+}
+
+span[status="-1"],
+button[danger] {
     background-color: rgb(255, 79, 79);
 }
 
-span[status="0"] {
+span[status="0"],
+label[type="toggle"]::after,
+button[normal] {
     background-color: rgb(134, 134, 134);
 }
 
-span[status="1"] {
+span[status="1"],
+input:checked+label[type="toggle"],
+button[success] {
     background-color: rgb(74, 196, 135);
+}
+
+input[type="submit"],
+button {
+    background-color: rgb(39, 127, 199);
 }
 
 footer>div>p {
     color: #b3b3b3;
     text-shadow: 1px 1px 0 #ffffff;
+}
+
+section[list]>ul>li>section[borderless] {
+    background-color: transparent;
 }
