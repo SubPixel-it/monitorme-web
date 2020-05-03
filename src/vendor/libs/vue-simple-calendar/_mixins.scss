@@ -1,0 +1,19 @@
+@mixin vue-simple-calendar-event-variant($parent, $background) {
+  $parent: if($parent != null, '.cv-event-#{$parent}.cv-event', '.cv-event');
+
+  #{$parent} {
+    background: rgba($background, .15) !important;
+  }
+}
+
+@mixin vue-simple-calendar-theme($background) {
+  @include vue-simple-calendar-event-variant(null, $background);
+
+  .cv-day.draghover {
+    box-shadow: inset 0 0 0.0 .125rem $background !important;
+  }
+
+  .cv-day.today {
+    background: rgba($background, .05) !important;
+  }
+}

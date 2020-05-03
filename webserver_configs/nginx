@@ -1,0 +1,25 @@
+location / {
+    try_files $uri $uri/ @rewrites;
+}
+
+location @rewrites {
+    rewrite ^(.+)$ /index.html last;
+}
+
+location = /favicon.ico {
+    log_not_found off;
+    access_log off;
+}
+
+location = /robots.txt {
+    allow all;
+    log_not_found off;
+    access_log off;
+}
+
+location ~* \.(ico|jpg|webp|jpeg|gif|css|png|js|ico|bmp|zip|woff|ttf)$ {
+    expires max;
+    log_not_found off;
+    add_header Pragma public;
+    add_header Cache-Control "public";
+}

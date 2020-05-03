@@ -1,0 +1,50 @@
+a {
+    color: #191919;
+}
+
+a:hover {
+    color: #323232;
+}
+
+header,
+section[list] {
+    background-color: #fff;
+}
+
+header,
+footer,
+header,
+div[divider],
+section[list],
+section[list]>ul>li {
+    border-color: #e8e8e8;
+}
+
+body {
+    background-color: #eeeeeed6;
+}
+
+section[list]>ul>li>span {
+    color: rgb(119, 119, 119);
+}
+
+span[status] {
+    color: #ffffff;
+}
+
+span[status="-1"] {
+    background-color: rgb(255, 79, 79);
+}
+
+span[status="0"] {
+    background-color: rgb(134, 134, 134);
+}
+
+span[status="1"] {
+    background-color: rgb(74, 196, 135);
+}
+
+footer>div>p {
+    color: #b3b3b3;
+    text-shadow: 1px 1px 0 #ffffff;
+}

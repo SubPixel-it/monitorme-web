@@ -1,0 +1,106 @@
+body {
+    font-family: "Heebo", Arial, Helvetica, sans-serif;
+}
+
+header>div>a {
+    font-size: 1.2em;
+}
+
+header>div>a,
+header>div>ul>li>a,
+section[list]>ul>li>b {
+    font-weight: 500;
+}
+
+header>div>a,
+header>div>ul {
+    display: inline-table;
+}
+
+header>div>ul {
+    float: right;
+}
+
+header>div>ul>li>a,
+section[list]>ul>li>b,
+section[list]>ul>li>div>span[status] {
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+header>div,
+main>div:not([divider]),
+main>div[divider]>div,
+footer>div {
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+header>div>ul>li>a>span[icon],
+section[list]>ul>li>div>span[icon] {
+    position: relative;
+    margin: -.3rem 0 0 0;
+    top: .4rem;
+}
+
+section[list]>ul>li>div>span[icon] {
+    font-size: 1em;
+    top: .2rem;
+    cursor: pointer;
+    margin: -.3rem .4rem 0;
+}
+
+header {
+    padding: .2rem 0;
+}
+
+header,
+div[divider],
+section[list]>ul>li {
+    border-bottom: 1px solid;
+}
+
+footer {
+    border-top: 1px solid;
+}
+
+section[list] {
+    border: 1px solid;
+    margin: 1rem 0;
+}
+
+section[list]>ul>li {
+    padding: .8rem;
+}
+
+section[list]>ul>li>b,
+section[list]>ul>li>span {
+    display: block;
+}
+
+section[list]>ul>li>b {
+    display: block;
+}
+
+section[list]>ul>li>div {
+    float: right;
+    margin: -1.9rem 0 0 0;
+}
+
+section[list]>ul>li>div>span {
+    margin: 0 .4rem;
+}
+
+section[list]>ul>li>span {
+    font-size: .7em;
+}
+
+span[status] {
+    border-radius: 3px;
+    padding: 0 .4rem;
+}
+
+footer>div>p {
+    font-size: .8rem;
+}
