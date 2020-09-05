@@ -76,7 +76,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "html-webpack-exclude-assets-plugin": "^0.0.7",
-    "node-sass": "~4.11.0",
+    "node-sass": "~4.13.1",
     "rename-webpack-plugin": "^2.0.0",
     "sass-loader": "^7.1.0",
     "suppress-chunks-webpack-plugin": "^1.0.5",
