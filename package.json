@@ -11,7 +11,7 @@
     "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
-    "axios": "~0.18.0",
+    "axios": "~0.21.1",
     "c3": "^0.6.7",
     "chart.js": "~2.9.4",
     "echarts": "^4.2.1",
